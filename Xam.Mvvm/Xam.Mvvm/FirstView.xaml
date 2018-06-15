@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xam.Mvvm.FirstView"
+             xmlns:mvvm="clr-namespace:Xam.Mvvm"
+             xmlns:behaviour="clr-namespace:Xam.Mvvm.Common"
+             BindingContext="{Binding Source={x:Static mvvm:App.Locator}, Path=Main}">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+            <ListView 
+                x:Name="MenuItemsListView"
+                SeparatorVisibility="Default"
+                SeparatorColor="Black"
+                HasUnevenRows="True"
+                CachingStrategy="RecycleElement"
+                ItemsSource="{Binding DisplayList,Mode=TwoWay}"
+                SelectedItem="{Binding SelectedCountry,Mode=TwoWay}">
+
+                <ListView.Behaviors>
+                    <behaviour:EventToCommandBehavior
+                       EventName="ItemTapped"
+                       Command="{Binding ItemTappedCommand}"
+                       Converter="{StaticResource ItemTappedConverter}"/>
+
+                    <behaviour:EventToCommandBehavior
+                       EventName="ItemSelected"
+                       Command="{Binding ItemSelectedCommand}"
+                       Converter="{StaticResource SelectedItemConverter}"/>
+
+                </ListView.Behaviors>
+                
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <StackLayout 
+                                Padding="15,10" 
+                                Orientation="Horizontal"
+                                HorizontalOptions="FillAndExpand">
+
+                                    <Label 
+                                    VerticalOptions="FillAndExpand" 
+                                    VerticalTextAlignment="Center" 
+                                    Text="{Binding Name}" />
+
+                                </StackLayout>
+
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <Label 
+                VerticalOptions="FillAndExpand" 
+                VerticalTextAlignment="Center" 
+                TextColor="Red"
+                FontSize="Large"
+                BackgroundColor="LightPink"
+                Text="{Binding CountryName,Mode=TwoWay}" />
+
+            <Button
+                x:Name="btnNavigate"
+                Text="ADD MORE"
+                Command="{Binding ButtonClickCommand}"
+                WidthRequest="100"
+                HeightRequest="100">
+                
+            </Button>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

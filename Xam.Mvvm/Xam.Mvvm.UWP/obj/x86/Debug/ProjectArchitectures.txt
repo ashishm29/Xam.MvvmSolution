@@ -1,0 +1,1 @@
+C:\Users\Ruchira\Desktop\Xam.MvvmSolution\Xam.Mvvm\Xam.Mvvm.UWP\Xam.Mvvm.UWP.csproj;x86

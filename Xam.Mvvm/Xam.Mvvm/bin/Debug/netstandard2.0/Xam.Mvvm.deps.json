@@ -1,0 +1,137 @@
+{
+  "runtimeTarget": {
+    "name": ".NETStandard,Version=v2.0/",
+    "signature": "7e9ed127357452d5bbbe65424292bcb5fdf8aadc"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETStandard,Version=v2.0": {},
+    ".NETStandard,Version=v2.0/": {
+      "Xam.Mvvm/1.0.0": {
+        "dependencies": {
+          "Acr.UserDialogs": "7.0.1",
+          "CommonServiceLocator": "2.0.2",
+          "MvvmLight": "5.4.1",
+          "MvvmLightLibs": "5.4.1",
+          "NETStandard.Library": "2.0.1",
+          "Plugin.UserDialogs": "1.0.0",
+          "Xam.Mvvm.ViewModel": "1.0.0",
+          "Xamarin.Forms": "3.0.0.561731"
+        },
+        "runtime": {
+          "Xam.Mvvm.dll": {}
+        }
+      },
+      "Acr.UserDialogs/7.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/Acr.UserDialogs.dll": {}
+        }
+      },
+      "CommonServiceLocator/2.0.2": {
+        "runtime": {
+          "lib/netstandard2.0/CommonServiceLocator.dll": {}
+        }
+      },
+      "Microsoft.NETCore.Platforms/1.1.0": {},
+      "MvvmLight/5.4.1": {},
+      "MvvmLightLibs/5.4.1": {
+        "runtime": {
+          "lib/net45/GalaSoft.MvvmLight.Extras.dll": {},
+          "lib/net45/GalaSoft.MvvmLight.Platform.dll": {},
+          "lib/net45/GalaSoft.MvvmLight.dll": {},
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        }
+      },
+      "NETStandard.Library/2.0.1": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0"
+        }
+      },
+      "Plugin.UserDialogs/1.0.0": {
+        "dependencies": {
+          "Acr.UserDialogs": "7.0.1"
+        }
+      },
+      "Xamarin.Forms/3.0.0.561731": {
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Forms.Core.dll": {},
+          "lib/netstandard2.0/Xamarin.Forms.Platform.dll": {},
+          "lib/netstandard2.0/Xamarin.Forms.Xaml.dll": {}
+        }
+      },
+      "Xam.Mvvm.ViewModel/1.0.0": {
+        "runtime": {
+          "Xam.Mvvm.ViewModel.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Xam.Mvvm/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Acr.UserDialogs/7.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+eGbTgwaFPzcaRnMdnAK5pHA0eoeoxkhy80FNwGeewqvA+DM6fUPM9yMbrN2hw3rcuBaXd2ghy2Xq5XU7m8qkw==",
+      "path": "acr.userdialogs/7.0.1",
+      "hashPath": "acr.userdialogs.7.0.1.nupkg.sha512"
+    },
+    "CommonServiceLocator/2.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OeAz2cDGiQuaxpJ2pUm1xyZyklT2HgP5LHoumI0o/pcXdTweJMjKHu92JKa33pZRCrRI0DdPcE5MGHk6GCpDMQ==",
+      "path": "commonservicelocator/2.0.2",
+      "hashPath": "commonservicelocator.2.0.2.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Platforms/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
+      "path": "microsoft.netcore.platforms/1.1.0",
+      "hashPath": "microsoft.netcore.platforms.1.1.0.nupkg.sha512"
+    },
+    "MvvmLight/5.4.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-b5MlUz3DzEa8rIdx9DBizriYizNRIGF9prT8r7gTKhSIsQuxwABDo+6L4tpKlYJjIBANCP94fPsAMddcAZyGuA==",
+      "path": "mvvmlight/5.4.1",
+      "hashPath": "mvvmlight.5.4.1.nupkg.sha512"
+    },
+    "MvvmLightLibs/5.4.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-eh2cvxDG78CQ6tfkCAW9Y7H1lQ+iV8U+XI7WDXn8BoDhZrr43hDPJyEJwoZ1yeybEDnQTaiRTavlAxf6CHeNUg==",
+      "path": "mvvmlightlibs/5.4.1",
+      "hashPath": "mvvmlightlibs.5.4.1.nupkg.sha512"
+    },
+    "NETStandard.Library/2.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oA6nwv9MhEKYvLpjZ0ggSpb1g4CQViDVQjLUcDWg598jtvJbpfeP2reqwI1GLW2TbxC/Ml7xL6BBR1HmKPXlTg==",
+      "path": "netstandard.library/2.0.1",
+      "hashPath": "netstandard.library.2.0.1.nupkg.sha512"
+    },
+    "Plugin.UserDialogs/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NbpdynjP4jWyyiS/IhUHAraW3XUyk+RyCD79P9rp6wgUR1MHRsGSBfLild+O2gB2hH3CIkRGY0rHTV2AstEP+w==",
+      "path": "plugin.userdialogs/1.0.0",
+      "hashPath": "plugin.userdialogs.1.0.0.nupkg.sha512"
+    },
+    "Xamarin.Forms/3.0.0.561731": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZnpuSybty6uZsgInJQD2QoYsjsdzPmu25EltSNJTnwgiQCW0MVZfwU6//jbt4Sf0ZfAiryi8MZFhU1I0NAP6Ew==",
+      "path": "xamarin.forms/3.0.0.561731",
+      "hashPath": "xamarin.forms.3.0.0.561731.nupkg.sha512"
+    },
+    "Xam.Mvvm.ViewModel/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
